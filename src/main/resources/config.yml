@@ -1,0 +1,85 @@
+# Questo Plugin è stato creato da WorkWolf_2
+# Anche detto lupo da lavoro (cit. ChatGPT)
+# Si prega di non infangare questo nome
+
+# ------ INIZIO ------
+
+# ------ CHAT FILTER START ------
+# Inserire le parole vietate nel server
+banned-words:
+  - cazzo
+  - puttana
+  - madonna
+  - dio
+
+# Questo parametro indica per quanto tempo si dovrà mutare il player.
+# Non sono supportati numeri con la virgola.
+# h = ora, m = minuti, s = secondi, d = giorni, mo = mesi
+temp-mute: 1h # Default: 1h
+
+# Questo parametro indica la motivazione del mute che apparirò al player.
+# Non sono supportati i colori(&a, &4, etc...)
+reason: Linguaggio Scurrile # Default Linguaggio Scurrile
+
+# ------ CHAT FILTER END ------
+
+# ------ IPBLOCK START ------
+
+blockips: true # Default: true
+
+# Questo parametro indica per quanto tempo si dovrà mutare il player.
+# Non sono supportati numeri con la virgola.
+# h = ora, m = minuti, s = secondi, d = giorni, mo = mesi
+ips-temp-mute: 3d # Default: 3d
+
+# Questo parametro indica la motivazione del mute che apparirò al player.
+# Non sono supportati i colori(&a, &4, etc...)
+ips-reason: Spam ip # Default: Spam ip
+
+# ------ IPBLOCK END ------
+
+# ------ PLUGIN HIDER START ------
+blocked-cmds:
+    - pl
+    - plugins
+    - ver
+    - version
+    - about
+    - icanhasbukkit
+    - bukkit:?
+    - bukkit:pl
+    - bukkit:plugins
+    - bukkit:about
+    - bukkit:help
+    - bukkit:ver
+    - bukkit:version
+    - minecraft:help
+    - minecraft:me
+    - ?
+    - help
+
+# ------ PLUGIN HIDER END ------
+
+# ------ MESSAGES START ------
+plugin-hidemessage: '&c&lNon hai il permesso di vedere i plugin'
+config-reloader: '&a&lConfig ricaricati!'
+only-player-command: '&c&lQuesto comando può essere eseguito solo da un giocatore!'
+cave-exists: '&aQuesta caverna esiste già'
+set-cave-successfull: '&aCaverna impostata correttamente'
+not-enough-permission: '&c&lNon hai sufficienti permessi'
+player-not-online: '&c&lIl giocatore non è online!'
+cave-not-exists: '&c&lLa caverna non esiste'
+player-caved: '&a&lIl giocatore è stato incavernato con successo'
+player-not-caved: '&a&lIl giocatore non è incavernato!'
+player-uncaved: '&a&lIl giocatore è stato sprigionato'
+player-just-caved: '&a&lIl giocatore è già incavernato!'
+player-try-command: '&4&lSei incavernato, non puoi eseguire comandi!'
+
+
+
+#------ FINE ------
+
+# PERMESSI:
+#
+# cavemc.bypass: Permette al player che ha questo permesso di bypassare il controllo del chat filter
+# cavemc.read.badwords: Permette a chi ha questo permesso di vedere i messaggi cancellati dal chat filter

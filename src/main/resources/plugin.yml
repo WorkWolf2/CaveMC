@@ -1,0 +1,23 @@
+name: CaveMC
+version: '${project.version}'
+main: it.cavemc.cavemc.CaveMC
+api-version: 1.19
+authors: [ WorkWolf_2 ]
+description: Plugin ufficiale di CaveMC
+website: https://www.cavemc.it/
+commands:
+  setcave:
+    description: Creazione di una caverna per imprigionare un giocatore
+    permission: cavemc.cave.set
+    usage: /<command> <nome_caverna>
+  cave:
+    description: Imprigiona un utente in una caverna
+    permission: cavemc.cave.caves
+    usage: /<command> <nome_giocatore> <caverna> <tempo>
+  uncave:
+    description: Sprigiona un utente
+    permission: cavemc.cave.uncave
+    usage: /<command> <nome_giocatore>
+  friend:
+    description: Amicizie
+    usage: /<command> <comando> <giocatore>
